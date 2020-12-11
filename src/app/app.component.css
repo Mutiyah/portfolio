@@ -1,0 +1,319 @@
+
+#topmost{
+    padding: 10px 130px 5px 165px;
+    width: 100vw;
+    height: 150px;
+    background: linear-gradient(to right, #C02428 50%, #cf4247 100%) ;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    z-index: 1;
+}
+#logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1em;
+}
+
+#logo h1 a{
+    font-size: 1.1em;  
+    letter-spacing: .2em; 
+    text-transform: uppercase;
+    color: #fff;
+}
+#links{
+    display: flex;
+    flex-direction: column;
+}
+
+#links a{
+    width: 140px;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 15px;
+    background-image: linear-gradient(#C02428, #fff );
+    color: #000;
+    font-weight: 500;
+}
+
+
+#links a:hover{
+    background-image: linear-gradient(#fff,#C02428);
+    color: #fff;
+    border: 3px solid #7c1417;
+}
+
+#topmost div a{
+    text-decoration: none;
+    overflow: hidden;
+}
+#about-me{
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding: 30px;
+    padding-top: 160px ;
+}
+#image-section{
+    flex: 0 0 45%;
+    min-width: 400px;
+    height: 100%;
+    padding: 20px 80px; 
+}
+#image-section img{
+    max-width: 400px;
+    height: 400px;
+}
+#short-note{
+flex: 0 0 45%;
+height: auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 25px;
+}
+
+/* ...............
+  hobbies section
+.................. */
+#hobbies{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+#hobbySection{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   color: #fff;
+   font-family: 'Montserrat', sans-serif;
+
+}
+#hobbyWhen{
+    padding-top: 30px;
+}
+.sub-hobby{
+    flex: 0 0 150px;
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    padding: 0px 40px
+}
+
+.sub-hobby i{
+    padding-bottom: 10px;
+}
+
+/* ...............
+  project  section
+.................. */
+#projectSection-heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+font-family: 'Montserrat', sans-serif;
+text-transform: uppercase;
+
+}
+#projectSection{
+    background-color: #fff;
+    padding: 50px 10px;
+}
+.sub-projectSection{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.projectSection-content{
+    width: 400px;
+   align-self: center;
+   font-family: 'Castoro', serif;
+   padding-right: 20px;
+}
+
+.projectSection-content{
+    padding-left: 30px;
+    width: 430px;
+}
+
+.projectSection-content p{
+    line-height: 25px;
+
+}
+.projectSection-content{
+font-family: 'Montserrat', sans-serif;
+
+}
+.projectSection-image{
+    display: flex;
+    flex-direction: column;
+}
+.projectSection-image img{
+    width: 400px;
+}
+
+.projectSection-image a{
+    align-self: center;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+   font-family: 'Castoro', serif;
+   border-top: 1.5px solid #ccc;
+   border-bottom: 1.5px solid #ccc;
+    padding: 10px 30px;
+}
+
+.projectSection-image a:hover{
+    border: 1px solid #C02428;
+    background-color: #C02428;
+    transition: .5s ease;
+    color: #fff;
+    border-radius: 5px;
+ 
+}
+#projectSection hr{
+    display: none;
+}
+
+/* ...............
+  contact  section
+.................. */
+#contact{
+    width: 100vw;
+    padding: 50px;
+    background-color: #C02428;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+#contact i{
+    color: #fff;
+    padding-right: 40px;
+}
+
+
+@media screen and (max-width: 1000px){
+    #topmost{
+        padding: 10px 80px 5px 115px;
+    }
+
+    #about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px 50px;
+        height: auto;
+    }
+
+    #image-section{
+        width: 500px;
+        align-self: center;
+    }
+}
+@media screen and (max-width: 800px){
+    #topmost{
+        padding : 10px 25px;
+    }
+
+    #logo h1 a{
+        font-size: .8em;
+    }
+    #projectSection hr{
+        display: block;
+        margin-top: 50px;
+       border: .5px solid #C02428;
+    }
+    .projectSection-content{
+        width: 95%;
+        padding-bottom: 20px;
+        margin: auto;
+    }
+    .projectSection-image img{
+        width: 95vw;
+    }
+
+    .sub-projectSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mid{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    
+    #image-section, #short-note,  #image-section img{
+        width: 100%;
+        height: 500px;  
+    }
+
+
+    #links a{
+        width: auto;
+        padding: 5px 15px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    html{
+        overflow-x: hidden;
+    }
+
+    
+  
+    #links{
+     justify-content: space-around;
+    }
+
+    #logo{
+        font-size: 1em;   
+    }
+ 
+    #hobbies{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sub-hobby{
+      max-height: 100px;
+    }
+
+    #image-section, #short-note,  #image-section img{
+        width: 100%;
+        height: 400px
+    }
+}
+
+@media screen and (max-width: 500px){
+    .icon{
+        left: 44.5%;
+        }
+    html{
+        overflow-x: hidden;
+    }
+   
+    #image-section img{
+        width: 90%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #image-section img{
+        min-width: 100%;
+        flex-grow: 1;
+        flex-shrink: none;
+    }
+    #hobbyWhen{
+        padding: 15px 30px; 
+    }
+}
